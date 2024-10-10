@@ -1,0 +1,107 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #999;
+}
+
+.game-container {
+  display: flex;
+  align-items: center; 
+  margin: 20px;
+}
+
+.square {
+  font-size: x-large;
+  background: #888888;
+  border: 1px solid #ebcaca;
+  float: left;
+  line-height: 34px;
+  height: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+  box-shadow: 0 0 10px rgb(247, 233, 44);
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.restart-button{
+  border: 0;
+  border-radius: 8px;
+  height: 30px;
+  margin-top: 6px;
+  background-color: rgb(151, 233, 28);
+  transition: 1s;
+}
+
+.next-round-button{
+  border: 0;
+  border-radius: 8px;
+  height: 30px;
+  margin-top: 6px;
+  background-color: rgb(151, 233, 28);
+  transition: 1s;
+}
+
+.restart-button:hover{
+
+  transition: 1s;
+  opacity: 0.2;
+}
+
+.next-round-button:hover{
+
+  transition: 1s;
+  opacity: 0.2;
+}
+
+.restart-button:active{
+  background-color: green;
+  transition: 0.4s;
+  opacity: 0.8;
+}
+
+.next-round-button:active{
+  background-color: green;
+  transition: 0.4s;
+  opacity: 0.8;
+}
+
+.tictactoeboard {
+  flex: 1;
+}
+
+.scoreboard {
+  margin-left: 40px; /* Add some space between the board and the scoreboard */
+  padding: 10px;
+  background-color: #888888;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(247, 233, 44);
+  text-align: center;
+}
+
+.square:hover {
+  background-color: #b3afaf; 
+  transition: 0.4s
+}
+
+.square.X {
+  color: #ff6347; /* X in tomato red */
+  text-shadow: 2px 2px 8px rgba(255, 99, 71, 0.5); /* Subtle shadow for X */
+}
+
+.square.O {
+  color: #4682b4; /* O in steel blue */
+  text-shadow: 2px 2px 8px rgba(70, 130, 180, 0.5); /* Subtle shadow for O */
+}
+
+
